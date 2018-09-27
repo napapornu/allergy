@@ -1,0 +1,62 @@
+@media screen and (min-width: 100px) and (max-width: 700px) {
+
+
+
+	.formtitle{
+  margin: 0px 0px!important;
+	}
+	.formtitle label {
+    font-size: 16px;
+    color: #000;
+    font-weight: 100;
+    line-height: 20px;
+}
+.formtitle select {
+    font-size: 17px!important;
+    padding-top: 3px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+.text_title {
+    color: #32AAFF;
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    text-align: center;
+}
+.form-group button {
+    font-size: 18px;
+    background-color: #46B8FF;
+}
+
+.form-group button:hover {
+    font-size: 18px;
+    color: #46B8FF;
+    background-color: #DFF2FA!important;
+}
+.textf {
+    font-size: 13px;
+}
+.textresults{
+  font-size: 13px;
+  font-weight: bold;
+}
+}

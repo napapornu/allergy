@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>พยาการณ์การเกิดโรคภูมิแพ้</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    body,td,th {
+	font-size: 20px;
+}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+     			<!-- Banner -->
+  <center><img src="pic/p1.jpg" class="img-responsive"  alt="Responsive image"></center>
+
+                <!-- Background -->
+             	<style type="text/css">
+            		body  { background-image : url('pic/backg.jpg');
+                    		background-repeat : repeat;
+                    		background-attachment : fixed}
+
+
+
+        		</style>
+
+  <!-- start menu -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Allergye Disease Prediction</a>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li role="presentation"><a href="home.html">หน้าแรก <span class="sr-only">(current)</span></a></li>
+        <li role="presentation"><a href="index.php.html" target="_parent">การวิเคราะห์การเกโรคภูมิแพ้</a></li>
+        <li role="presentation"><a href="symptom.html" target="_parent">ความรู้เกี่ยวกับโรคภูมิแพ้</a></li>
+
+
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--end menu -->
+
+
+<!-- body ส่วนของพยากรณ์ -->
+<div class="container-fluid">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+            	<center><h3><font color="#698B69"> กรุณาตอบคำถามต่อไปนี้ </font></h3></center>
+          		</div>
+
+
+<!-- from -->
+	   	  			<div class="panel-body">
+                    <form id="p1" name="p1" method="post" class="form-horizontal" action="out.php"
+                    onSubmit="JavaScript:return message();" >
+
+                       				<div class="form-group">
+							            <label for="sex" class="col-lg-5 control-label">เพศ :</label>
+							            <div class="col-lg-3">
+							                <select style="font-size:15px;" name="sex" class="form-control" id="sex">
+                      <option value="0">กรุณาเลือก</option>
+											<option value="sex1">ชาย</option>
+											<option value="sex2">หญิง</option>
+											</select>
+							            </div>
+							        </div>
+
+
+
+                      <div class="form-group">
+                  <label for="age" class="col-lg-5 control-label">อายุ :</label>
+                  <div class="col-lg-3">
+                      <select style="font-size:15px;" name="age" class="form-control" id="age">
+                                  <option value="0">กรุณาเลือก</option>
+              <option value="age1">น้อยกว่า 18 ปี</option>
+              <option value="age2">18- 25 ปี</option>
+              <option value="age3">26-40 ปี</option>
+              <option value="age4">มากกว่า 40 ปี</option>
+              </select>
+                  </div>
+              </div>
+
+              <div class="form-group">
+          <label for="work" class="col-lg-5 control-label">อาชีพ :</label>
+          <div class="col-lg-3">
+              <select style="font-size:15px;" name="work" class="form-control" id="work">
+                                  <option value="0">กรุณาเลือก</option>
+              <option value="work1">นักเรียน/นักศึกษา</option>
+              <option value="work2">ค้าขาย/ธุรกิจส่วนตัว</option>
+              <option value="work3">รับจ้าง</option>
+              <option value="work4">พนักงานบริษัท</option>
+              <option value="work6">รับราชการ</option>
+              </select>
+          </div>
+      </div>
+
+
+          <div class="form-group">
+      				 <label for="congenital" class="col-lg-5 control-label">โรคประจำตัว :</label>
+      							 <div class="col-lg-3">
+      							       	<select style="font-size:15px;" name="congenital" class="form-control" id="ccongenital">
+                                  <option value="0">โปรดระบุ</option>
+      											      <option value="congenital1">โรคกรดไหลย้อน</option>
+                                  <option value="congenital2">โรคไวรัสทางเดินหายใจ</option>
+      											      <option value="congenital3">โรคไซนัสอักเสบเรื้อรัง</option>
+                                  <option value="congenital4">โรคแพ้อากาศ</option>
+                                  <option value="congenital5">โรคหืด</option>
+                                  <option value="congenital6">โรคภูมิแพ้ผิวหนัง</option>
+                                  <option value="congenital7">ไม่เป็น</option>
+                                  <option value="congenital8">อื่นๆ</option>
+
+                            </select>
+      							  </div>
+      		</div>
+
+
+                                     <div class="form-group">
+							            <label for="family" class="col-lg-5 control-label">บุคคลในครอบครัวเป็นโรคภูมิแพ้หรือไม่ :</label>
+							            <div class="col-lg-3">
+							            	<select style="font-size:15px;" name="family" class="form-control" id="family">
+                                        	<option value="0">กรุณาเลือก</option>
+                                          <option value="family1">พ่อหรือแม่</option>
+                                          <option value="family2">พ่อและแม่</option>
+                                          <option value="family3">ไม่มี</option>
+
+											</select>
+							            </div>
+							        </div>
+
+<Br>
+
+                                    <div class="form-group">
+							            <label for="atopen" class="col-lg-5 control-label">ท่านมีอาการแพ้สารก่อภูมิแพ้เหล่านี้หรือไม่ :</label>
+							            <div class="col-lg-3">
+
+                            <form action="">
+                              <input type="checkbox" checked="checked">ละอองเกสรดอกไม้ ดอกหญ้า
+                              <span class="checkmark"><br>
+
+                              <input type="checkbox">ขนสัตว์เลี้ยง
+                              <span class="checkmark"></span> <br>
+
+                              <input type="checkbox"> ฝุ่น ไรฝุ่น
+                              <span class="checkmark"></span><br>
+
+                              <input type="checkbox">เชื้อรา
+                              <span class="checkmark"></span><br>
+
+                              <input type="checkbox">แมลงสาบ
+                              <span class="checkmark"></span><br>
+
+                              <input type="checkbox">ไม่มีอาการแพ้
+                              <span class="checkmark"></span><br>
+
+                            </form>
+
+							            </div>
+							        </div>
+<br>
+                      <div class="form-group">
+                          <label for="atopen" class="col-lg-5 control-label">ท่านมีอาการแพ้อาหารเหล่านี้หรือไม่ :</label>
+                          <div class="col-lg-3">
+                            <form action="">
+
+                                          <input type="checkbox" checked="checked">ธัญพืช
+                                            <span class="checkmark"><br>
+
+                                          <input type="checkbox">สัตว์ทะเล
+                                            <span class="checkmark"></span> <br>
+
+                                          <input type="checkbox">ไข่
+                                            <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">ปลา
+                                                <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">ถั่วชนิดต่าง ๆ
+                                                <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">อาหารมักดอง
+                                                <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">ขึ้นฉ่ายและพืชในตระกูลเดียวกัน
+                                                <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">นม
+                                                <span class="checkmark"></span><br>
+
+                                            <input type="checkbox">ไม่มีความผิดปกติ
+                                                <span class="checkmark"></span><br>
+
+                            </form>
+                  </div>
+          </div>
+
+              <br>
+
+              <div class="form-group">
+        <label for="chemicals	" class="col-lg-5 control-label">มีการแพ้สารเคมีเหล่านี้หรือไม่ :</label>
+        <div class="col-lg-3">
+
+          <input type="checkbox" checked="checked">ผงซักฟอก
+            <span class="checkmark"><br>
+
+          <input type="checkbox">น้ำยาเปลี่ยนสีผม
+            <span class="checkmark"></span> <br>
+
+          <input type="checkbox">น้ำหอมที่มีกลิ่นฉุน
+            <span class="checkmark"></span><br>
+
+            <input type="checkbox">ควันรถ
+                <span class="checkmark"></span><br>
+
+            <input type="checkbox">สเปรย์แต่งผม
+                <span class="checkmark"></span><br>
+
+            <input type="checkbox">ควันบุหรี่
+                <span class="checkmark"></span><br>
+
+            <input type="checkbox">ยาฆ่าแมลง
+                <span class="checkmark"></span><br>
+
+            <input type="checkbox">ไม่มีการแพ้
+                <span class="checkmark"></span><br>
+
+
+        </div>
+        </div>
+
+<br>
+<br>
+
+
+
+
+                      <div class="form-group">
+                      <label for="alcohol" class="col-lg-5 control-label">มีการดื่มเครื่องดื่มแอลกอฮอล์หรือไม่ :</label>
+                      <div class="col-lg-3">
+                        <select style="font-size:15px;" name="alcohol" class="form-control" id="alcohol">
+                                      <option value="0">กรุณาเลือก</option>
+                                      <option value="alcohol1">บางครั้ง</option>
+                                      <option value="alcohol2">บ่อย</option>
+                                      <option value="alcohol3">เป็นประจำ</option>
+                                      <option value="alcohol4">ไม่เคย</option>
+
+                                      </select>
+                      </div>
+                    </div>
+
+                                     <div class="form-group">
+							            <label for="home" class="col-lg-5 control-label">มีการทำความสะอาดบ้าน บ่อยเพียงใด :</label>
+							            <div class="col-lg-3">
+							            	<select style="font-size:15px;" name="home" class="form-control" id="home">
+                                        	<option value="0">กรุณาเลือก</option>
+                                          <option value="home1">1 ครั้ง/เดือน</option>
+											                     <option value="home2">2-3 ครั้ง/เดือน</option>
+                                        	<option value="home3">มากว่า 4 ครั้ง/เดือน</option>
+											                    <option value="home4">ไม่เคยเลย</option>
+
+                                        	</select>
+							            </div>
+							        </div>
+
+                      <div class="form-group">
+           <label for="bedroom" class="col-lg-5 control-label">มีการทำความสะอาดห้องนอน บ่อยเพียงใด :</label>
+           <div class="col-lg-3">
+             <select style="font-size:15px;" name="bedroom" class="form-control" id="bedroom">
+                           <option value="0">กรุณาเลือก</option>
+                           <option value="bedroom1">1 ครั้ง/เดือน</option>
+                           <option value="bedroom2">2-3 ครั้ง/เดือน</option>
+                           <option value="bedroom3">มากว่า 4 ครั้ง/เดือน</option>
+                           <option value="bedroom4">ไม่เคยเลย</option>
+
+                           </select>
+           </div>
+       </div>
+
+
+                                    <div class="form-group">
+							            <label for="cigarettes" class="col-lg-5 control-label">มีการสูบบุหรี่บ่อยครั้งเพียงใด :</label>
+							            <div class="col-lg-3">
+							            	<select style="font-size:15px;" name="cigarettes" class="form-control" id="cigarettes">
+                                          <option value="0">กรุณาเลือก</option>
+                                          <option value="cigarettes1">บางครั้ง</option>
+                                          <option value="cigarettes2">บ่อย</option>
+                                          <option value="cigarettes3">เป็นประจำ</option>
+                                          <option value="cigarettes4">ไม่เคย</option>
+
+                                        	</select>
+							            </div>
+							        </div>
+
+                      <div class="form-group">
+                      <label for="exercise" class="col-lg-5 control-label">การออกกำลังกายต่อสัปดาห์ :</label>
+                      <div class="col-lg-3">
+                      <select style="font-size:15px;" name="exercise" class="form-control" id="exercise">
+                            <option value="0">กรุณาเลือก</option>
+                            <option value="exercise1">1 – 2 ครั้ง/สัปดาห์</option>
+                            <option value="exercise2">3 – 4 ครั้ง/สัปดาห์</option>
+                            <option value="exercise3">มากกว่า 5 ครั้ง/สัปดาห์</option>
+                            <option value="exercise4">ไม่เคยออกกำลังกาย</option>
+
+                            </select>
+                      </div>
+                      </div>
+
+                                    <div class="form-group">
+							            <label for="sleep	" class="col-lg-5 control-label">การพักผ่อนของท่านเพียงพอหรือไม่ :</label>
+							            <div class="col-lg-3">
+							            	<select style="font-size:15px;" name="sleep" class="form-control" id="sleep">
+                                        	<option value="0">กรุณาเลือก</option>
+                                          <option value="sleep1">6-8 ชั่วโมง/วัน</option>
+											                    <option value="sleep2">9-12 ชั่วโมง/วัน</option>
+                                        	<option value="sleep3">น้อยกว่า 6 ชั่วโมง/วัน</option>
+                                        </select>
+							            </div>
+							        </div>
+
+                                    <div class="form-group">
+							            <label for="shelter" class="col-lg-5 control-label">มีการทำงานหรืออาศัยอยู่ในบริเวณเหล่านี้หรือไม่:</label>
+							            <div class="col-lg-3">
+							            	<select style="font-size:15px;" name="shelter" class="form-control" id="shelter">
+                                       		<option value="0">กรุณาเลือก</option>
+                                          <option value="shelter1">โรงงานอุตสาหกรรม</option>
+											                    <option value="shelter2">ชุมชนแออัด</option>
+                                        	<option value="shelter3">ใกล้แหล่งน้ำเสีย</option>
+											                    <option value="shelter4">ทุ่งนา</option>
+                                          <option value="shelter5">ไม่มี</option>
+
+                                        	</select>
+							            </div>
+							        </div>
+
+
+  <br>
+
+
+
+
+
+                	</div>
+             		</from>
+
+<!-- submit-->
+   									<div class="form-group">
+							        	<div class="col-lg-9 col-lg-offset-2">
+										<center><button onclick="message()" class="btn btn-success">วิเคราะห์ข้อมูล</button>
+                                        &nbsp; &nbsp; &nbsp;
+                            <input type="reset" name="clear" class="btn btn-danger" value="ล้างข้อมูล"></button></center>
+                        </div>
+                                    </div>
+
+            	<br>
+      				<br>
+              <br>
+
+            </div>
+    	</div>
+	</div>
+</div>
+
+
+ 	<br><br>
+    <!--footer-->
+    <div class="container">
+      <footer>
+          <div class="row">
+              <div align = "center" class="col-lg-12">
+                  <p>"COPYRIGHT@2018 &copy; ภาควิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ คณะวิทยาศาศตร์ มหาวิทยาลัยนเรศวร จังหวัดพิษณุโลก" </p>
+
+                  <p>  ติดต่อ : Nan Uamkhongsat</p>
+              </div>
+          </div>
+      </footer>
+    </div>
+    <br><br>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+<!--java script-->
+<SCRIPT language = javascript>
+
+function message() {
+
+var s = document.getElementById('s');
+var sex = s.options[s.selectedIndex].value;
+
+var a = document.getElementById('a');
+var age = a.options[a.selectedIndex].value;
+
+var w = document.getElementById('w');
+var work = w.options[w.selectedIndex].value;
+
+var con = document.getElementById('con');
+var congenital = con.options[con.selectedIndex].value;
+
+var f = document.getElementById('f');
+var family = f.options[f.selectedIndex].value;
+
+var at = document.getElementById('at');
+var atopen = at.options[at.selectedIndex].value;
+
+var al = document.getElementById('al');
+var alcohol = al.options[al.selectedIndex].value;
+
+var fo = document.getElementById('fo');
+var food = fo.options[fo.selectedIndex].value;
+
+var h = document.getElementById('h');
+var home = h.options[h.selectedIndex].value;
+
+var b = document.getElementById('b');
+var bedroom = b.options[b.selectedIndex].value;
+
+var ch = document.getElementById('ch');
+var chemicals = ch.options[ch.selectedIndex].value;
+
+var ci = document.getElementById('ci');
+var cigarettes = ci.options[ci.selectedIndex].value;
+
+var sl = document.getElementById('sl');
+var sleep = sl.options[sl.selectedIndex].value;
+
+var sh = document.getElementById('sh');
+var shelter = sh.options[sh.selectedIndex].value;
+
+var e = document.getElementById('e');
+var exercise = e.options[e.selectedIndex].value;
+
+   if(sex == '0' && age == '0' && work == '0' && congenital == '0' && family== '0' && atopen == '0' && alcohol == '0' && food == '0'
+   && home == '0' &&bedroom == '0' && chemicals == '0' && cigarettes== '0' && sleep== '0' && shelter == '0' && exercise == '0')
+   {
+      alert("กรุณาใส่ข้อมูลให้ครบ");
+   }
+
+  //เริ่มต้นกฏ
+   else if(atopen == 'atopen6')
+   {
+      window.location= "No"
+   }
+
+   else if(atopen == 'atopen3')
+   {
+      window.location= "allergic"
+   }
+    else if(atopen == 'atopen3' && atopen == 'atopen2' && bedroom == 'bedroom1' && sex == 'sex1')
+   {
+      window.location= "asthma"
+   }
+   else if(atopen == 'atopen3' && atopen == 'atopen2' && bedroom == 'bedroom1' && sex == 'sex2')
+   {
+      window.location= "No"
+   }
+    else if(atopen == 'atopen3' && atopen == 'atopen2' && bedroom == 'bedroom3')
+   {
+        window.location= "allergic"
+   }
+   else if(atopen == 'atopen3' && atopen == 'atopen2' && bedroom == 'bedroom2')
+  {
+       window.location= "allergic"
+  }
+  else if(atopen == 'atopen3' && atopen == 'atopen2' && bedroom == 'bedroom4')
+  {
+      window.location= "allergic"
+  }
+   else if(atopen == 'atopen1' && atopen =='atopen3' && atopen == 'atopen5' && bedroom != 'bedroom4')
+   {
+     window.location= "no"
+   }
+   // else if(atopen == 'atopen1' && atopen =='atopen3' && 'atopen5' && bedroom == '__' && work =='work3')
+   //{
+    // window.location= "no"
+  // }
+  // else if(atopen == 'atopen1' && atopen =='atopen3' && 'atopen5' && bedroom == '__' && work =='work3')
+  //{
+   // window.location= "no"
+ // }
+    else if(document.p1.bedroom.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.bedroom.focus();
+      return false;
+   }
+    else if(document.p1.chemicals.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.chemicals.focus();
+      return false;
+   }
+    else if(document.p1.sleep.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.sleep.focus();
+      return false;
+   }
+    else if(document.p1.cigarettes.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.cigarettes.focus();
+      return false;
+   }
+    else if(document.p1.shelter.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.shelter.focus();
+      return false;
+   }
+    else if(document.p1.exercise.value == "0")
+   {
+      alert('กรุณาใส่ข้อมูลให้ครบ');
+      document.p1.exercise.focus();
+      return false;
+   }
+
+
+   else
+   {
+	   document.p1.submit();
+   	   return false;
+	}
+}
+
+</SCRIPT>
+<!--end java script-->

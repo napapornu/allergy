@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'db helvethaicamon x v3 2';
+	src: url('db_helvethaicamon_x_v3.2.eot');
+	src: url('db_helvethaicamon_x_v3.2.eot?#iefix') format('embedded-opentype'),
+		url('db_helvethaicamon_x_v3.2.woff') format('woff'),
+		url('db_helvethaicamon_x_v3.2.ttf') format('truetype'),
+		url('db_helvethaicamon_x_v3.2.svg') format('svg');
+}
