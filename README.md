@@ -1,13 +1,14 @@
 # allergy project
 
 ## Project requirement
-- Bootstrap 3.7
-- jQuery
+- Bootstrap 3.3.7
+- jQuery 3.3.1
+- Sass 3.4.23
 
 ### Structure project
 
     .
-    ├── assets                                  # Documentation files (alternatively `doc`)
+    ├── assets                                  # Assets directory
     │   ├── css                                 # Custom stylesheet directory
     │   │   ├── logo-nav.css
     │   │   ├── responsive.css                  #responsive device
@@ -30,9 +31,9 @@
     │   |       └── jquery-3.3.1.min.js
     │   └── scss  
     ├── README.md                               # etc.
-    ├── form.html                               # etc.  ใช้กรอกข้อมูลเพื่อใช้ในการพยากรณ์ ปรับแก้ที่ฟอร์มเพื่อให้รับค่าไปเข้า if else ได้
-    ├── index.html                              # etc.  หน้าหลักไม่มีอะไร
-    ├── knowledge.html                          # etc.  ความรู้ทั่วไปของโรคภูมิแพ้ไม่มีอะไร
-    ├── out.php                                 # etc. ******  out.php result.html result.php  ไม่มีอะไรเลย ลบได้ *****
+    ├── form.html                               # ใช้กรอกข้อมูลเพื่อใช้ในการพยากรณ์ ปรับแก้ที่ฟอร์มเพื่อให้รับค่าไปเข้า if else ได้
+    ├── index.html                              # หน้าหลัก
+    ├── knowledge.html                          # ความรู้ทั่วไปของโรคภูมิแพ้ไม่มีอะไร
+    ├── out.php                                 # ******  out.php result.html result.php  ไม่มีอะไรเลย *****
     ├── result.html                             # etc.
     └── result.php                              # etc.
