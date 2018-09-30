@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>พยาการณ์การเกิดโรคภูมิแพ้</title><!-- Bootstrap -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./assets/plugins/normalize/normalize.css" rel="stylesheet">
     <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body,
@@ -31,13 +31,15 @@
     </style><!-- start menu -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1"
-                    data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Allergye
-                    Disease Prediction</a>
-            </div><!-- Collect the nav links, forms, and other content for toggling -->
+                    data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="#">Allergye Disease Prediction</a>
+            </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li role="presentation">
@@ -190,12 +192,42 @@
                                     :</label>
                                 <div class="col-lg-3">
                                     <form action="">
-                                        <input checked="checked" type="checkbox">ละอองเกสรดอกไม้ ดอกหญ้า <span class="checkmark"><br>
-                                            <input type="checkbox">ขนสัตว์เลี้ยง <span class="checkmark"></span><br>
-                                            <input type="checkbox"> ฝุ่น ไรฝุ่น <span class="checkmark"></span><br>
-                                            <input type="checkbox">เชื้อรา <span class="checkmark"></span><br>
-                                            <input type="checkbox">แมลงสาบ <span class="checkmark"></span><br>
-                                            <input type="checkbox">ไม่มีอาการแพ้ <span class="checkmark"></span><br></span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="atopen1" value="option1">
+                                        <label class="form-check-label" for="atopen1">ละอองเกสรดอกไม้ ดอกหญ้า</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="atopen2" value="option1">
+                                            <label class="form-check-label" for="atopen2">ขนสัตว์เลี้ยง</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="atopen3" value="option1">
+                                            <label class="form-check-label" for="atopen3">ฝุ่น ไรฝุ่น</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="atopen4" value="option1">
+                                            <label class="form-check-label" for="atopen4">เชื้อรา</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="atopen5" value="option1">
+                                            <label class="form-check-label" for="atopen5">แมลงสาบ</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="atopen6" value="option1">
+                                            <label class="form-check-label" for="atopen6">ไม่มีอาการแพ้</label>
+                                    </div>
+                                    <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">
+                                              Example checkbox
+                                            </label>
+                                    </div>
+                                    <!-- <input type="checkbox">ละอองเกสรดอกไม้ ดอกหญ้า <span class="checkmark"></span><br>
+                                    <input type="checkbox">ขนสัตว์เลี้ยง <span class="checkmark"></span><br>
+                                    <input type="checkbox"> ฝุ่น ไรฝุ่น <span class="checkmark"></span><br>
+                                    <input type="checkbox">เชื้อรา <span class="checkmark"></span><br>
+                                    <input type="checkbox">แมลงสาบ <span class="checkmark"></span><br>
+                                    <input type="checkbox">ไม่มีอาการแพ้ <span class="checkmark"></span><br></span> -->
                                     </form>
                                 </div>
                             </div><br>
@@ -203,29 +235,29 @@
                                 <label class="col-lg-5 control-label" for="atopen">ท่านมีอาการแพ้อาหารเหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
                                     <form action="">
-                                        <input checked="checked" type="checkbox">ธัญพืช <span class="checkmark"><br>
-                                            <input type="checkbox">สัตว์ทะเล <span class="checkmark"></span><br>
-                                            <input type="checkbox">ไข่ <span class="checkmark"></span><br>
-                                            <input type="checkbox">ปลา <span class="checkmark"></span><br>
-                                            <input type="checkbox">ถั่วชนิดต่าง ๆ <span class="checkmark"></span><br>
-                                            <input type="checkbox">อาหารมักดอง <span class="checkmark"></span><br>
-                                            <input type="checkbox">ขึ้นฉ่ายและพืชในตระกูลเดียวกัน <span class="checkmark"></span><br>
-                                            <input type="checkbox">นม <span class="checkmark"></span><br>
-                                            <input type="checkbox">ไม่มีความผิดปกติ <span class="checkmark"></span><br></span>
+                                        <input type="checkbox">ธัญพืช <span class="checkmark"><br>
+                                        <input type="checkbox">สัตว์ทะเล <span class="checkmark"></span><br>
+                                        <input type="checkbox">ไข่ <span class="checkmark"></span><br>
+                                        <input type="checkbox">ปลา <span class="checkmark"></span><br>
+                                        <input type="checkbox">ถั่วชนิดต่าง ๆ <span class="checkmark"></span><br>
+                                        <input type="checkbox">อาหารมักดอง <span class="checkmark"></span><br>
+                                        <input type="checkbox">ขึ้นฉ่ายและพืชในตระกูลเดียวกัน <span class="checkmark"></span><br>
+                                        <input type="checkbox">นม <span class="checkmark"></span><br>
+                                        <input type="checkbox">ไม่มีความผิดปกติ <span class="checkmark"></span><br></span>
                                     </form>
                                 </div>
                             </div><br>
                             <div class="form-group">
                                 <label class="col-lg-5 control-label" for="chemicals">มีการแพ้สารเคมีเหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
-                                    <input checked="checked" type="checkbox">ผงซักฟอก <span class="checkmark"><br>
-                                        <input type="checkbox">น้ำยาเปลี่ยนสีผม <span class="checkmark"></span><br>
-                                        <input type="checkbox">น้ำหอมที่มีกลิ่นฉุน <span class="checkmark"></span><br>
-                                        <input type="checkbox">ควันรถ <span class="checkmark"></span><br>
-                                        <input type="checkbox">สเปรย์แต่งผม <span class="checkmark"></span><br>
-                                        <input type="checkbox">ควันบุหรี่ <span class="checkmark"></span><br>
-                                        <input type="checkbox">ยาฆ่าแมลง <span class="checkmark"></span><br>
-                                        <input type="checkbox">ไม่มีการแพ้ <span class="checkmark"></span><br></span>
+                                    <input type="checkbox">ผงซักฟอก <span class="checkmark"><br>
+                                    <input type="checkbox">น้ำยาเปลี่ยนสีผม <span class="checkmark"></span><br>
+                                    <input type="checkbox">น้ำหอมที่มีกลิ่นฉุน <span class="checkmark"></span><br>
+                                    <input type="checkbox">ควันรถ <span class="checkmark"></span><br>
+                                    <input type="checkbox">สเปรย์แต่งผม <span class="checkmark"></span><br>
+                                    <input type="checkbox">ควันบุหรี่ <span class="checkmark"></span><br>
+                                    <input type="checkbox">ยาฆ่าแมลง <span class="checkmark"></span><br>
+                                    <input type="checkbox">ไม่มีการแพ้ <span class="checkmark"></span><br></span>
                                 </div>
                             </div><br>
                             <br>
@@ -426,6 +458,7 @@
     </script> <!-- form using analyze script -->
 
     <script src="./assets/js/analyze-script.js">
+    <script src="./assets/js/handle-form.js">
 
     </script>
 </body>
