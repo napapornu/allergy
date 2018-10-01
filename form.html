@@ -46,7 +46,7 @@
                         <a href="index.html">หน้าแรก <span class="sr-only">(current)</span></a>
                     </li>
                     <li role="presentation">
-                        <a href="form.html" target="_parent">การวิเคราะห์การเกโรคภูมิแพ้</a>
+                        <a href="form.html" target="_parent">การวิเคราะห์การเกิดโรคภูมิแพ้</a>
                     </li>
                     <li role="presentation">
                         <a href="knowledge.html" target="_parent">ความรู้เกี่ยวกับโรคภูมิแพ้</a>
@@ -74,7 +74,7 @@
                                 <label class="col-lg-5 control-label text-right" for="sex">เพศ :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="sex" name="sex" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="sex1">
@@ -90,7 +90,7 @@
                                 <label class="col-lg-5 control-label text-right" for="age">อายุ :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="age" name="age" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="age1">
@@ -112,7 +112,7 @@
                                 <label class="col-lg-5 control-label text-right" for="work">อาชีพ :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="work" name="work" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="work1">
@@ -137,7 +137,7 @@
                                 <label class="col-lg-5 control-label text-right" for="congenital">โรคประจำตัว :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="ccongenital" name="congenital" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             โปรดระบุ
                                         </option>
                                         <option value="congenital1">
@@ -172,7 +172,7 @@
                                     :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="family" name="family" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="family1">
@@ -186,12 +186,10 @@
                                         </option>
                                     </select>
                                 </div>
-                            </div><br>
+                            </div>
                             <div class="form-group">
-                                <label class="col-lg-5 control-label text-right" for="atopen">ท่านมีอาการแพ้สารก่อภูมิแพ้เหล่านี้หรือไม่
-                                    :</label>
+                                <label class="col-lg-5 control-label text-right" for="atopen">ท่านมีอาการแพ้สารก่อภูมิแพ้เหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
-                                    <form action="">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="allergens1" name="allergens" value="allergens1">
                                         <label class="form-check-label" for="allergens1">ละอองเกสรดอกไม้ ดอกหญ้า</label>
@@ -223,13 +221,11 @@
                                     <input type="checkbox">เชื้อรา <span class="checkmark"></span><br>
                                     <input type="checkbox">แมลงสาบ <span class="checkmark"></span><br>
                                     <input type="checkbox">ไม่มีอาการแพ้ <span class="checkmark"></span><br></span> -->
-                                    </form>
                                 </div>
-                            </div><br>
+                            </div>
                             <div class="form-group">
                                 <label class="col-lg-5 control-label text-right" for="atopen">ท่านมีอาการแพ้อาหารเหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
-                                    <form action="">
                                         <input type="checkbox">ธัญพืช <span class="checkmark"><br>
                                         <input type="checkbox">สัตว์ทะเล <span class="checkmark"></span><br>
                                         <input type="checkbox">ไข่ <span class="checkmark"></span><br>
@@ -239,9 +235,8 @@
                                         <input type="checkbox">ขึ้นฉ่ายและพืชในตระกูลเดียวกัน <span class="checkmark"></span><br>
                                         <input type="checkbox">นม <span class="checkmark"></span><br>
                                         <input type="checkbox">ไม่มีความผิดปกติ <span class="checkmark"></span><br></span>
-                                    </form>
                                 </div>
-                            </div><br>
+                            </div>
                             <div class="form-group">
                                 <label class="col-lg-5 control-label text-right" for="chemicals">มีการแพ้สารเคมีเหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
@@ -254,14 +249,14 @@
                                     <input type="checkbox">ยาฆ่าแมลง <span class="checkmark"></span><br>
                                     <input type="checkbox">ไม่มีการแพ้ <span class="checkmark"></span><br></span>
                                 </div>
-                            </div><br>
-                            <br>
+                            </div>
+
                             <div class="form-group">
                                 <label class="col-lg-5 control-label text-right" for="alcohol">มีการดื่มเครื่องดื่มแอลกอฮอล์หรือไม่
                                     :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="alcohol" name="alcohol" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="alcohol1">
@@ -283,7 +278,7 @@
                                 <label class="col-lg-5 control-label text-right" for="home">มีการทำความสะอาดบ้าน บ่อยเพียงใด :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="home" name="home" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="home1">
@@ -306,7 +301,7 @@
                                     :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="bedroom" name="bedroom" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="bedroom1">
@@ -328,7 +323,7 @@
                                 <label class="col-lg-5 control-label text-right" for="cigarettes">มีการสูบบุหรี่บ่อยครั้งเพียงใด :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="cigarettes" name="cigarettes" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="cigarettes1">
@@ -350,7 +345,7 @@
                                 <label class="col-lg-5 control-label text-right" for="exercise">การออกกำลังกายต่อสัปดาห์ :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="exercise" name="exercise" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="exercise1">
@@ -372,7 +367,7 @@
                                 <label class="col-lg-5 control-label text-right" for="sleep">การพักผ่อนของท่านเพียงพอหรือไม่ :</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="sleep" name="sleep" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="sleep1">
@@ -391,7 +386,7 @@
                                 <label class="col-lg-5 control-label text-right" for="shelter">มีการทำงานหรืออาศัยอยู่ในบริเวณเหล่านี้หรือไม่:</label>
                                 <div class="col-lg-3">
                                     <select class="form-control" id="shelter" name="shelter" style="font-size:15px;">
-                                        <option value="0">
+                                        <option disabled selected hidden value="0">
                                             กรุณาเลือก
                                         </option>
                                         <option value="shelter1">
