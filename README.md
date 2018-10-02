@@ -1,9 +1,21 @@
 # allergy project
+Download project and install use command.
+```
+git clone https://github.com/napapornu/allergy.git
+cd allergy
+npm install
+```
 
+Run web application use command.
+```
+cd allergy
+gulp
+```
 ## Project requirement
 - Bootstrap 3.3.7
 - jQuery 3.3.1
 - Sass 3.4.23
+
 
 ### Structure project
 
