@@ -49,10 +49,11 @@ $(document).ready(function () {
     // alert(atopen)
 
 
-    if (sex == null && age == null) {
+    if (sex == null || age == null) {
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
-    }else {
-      rule
+    }
+    else if (atopen ="atopen6"){
+          alret('ไม่มีโอกาศเป็น')
     }
   });
 
