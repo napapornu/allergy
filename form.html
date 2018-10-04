@@ -69,7 +69,7 @@
                         </center>
                     </div><!-- from -->
                     <div class="panel-body">
-                        <form action="out.php" class="form-horizontal" id="p1" method="post" name="p1" onsubmit="JavaScript:return message();">
+                        <form action="output.html" method="form1" name="f1" onsubmit="JavaScript:return fncSubmit();">
                             <div class="form-group">
                                 <label class="col-lg-5 control-label text-right" for="sex">เพศ :</label>
                                 <div class="col-lg-3">
@@ -187,6 +187,7 @@
                                     </select>
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label class="col-lg-5 control-label text-right" for="atopen">ท่านมีอาการแพ้สารก่อภูมิแพ้เหล่านี้หรือไม่ :</label>
                                 <div class="col-lg-3">
@@ -455,27 +456,29 @@
                                         </option>
                                     </select>
                                 </div>
-                            </div><br>
+                            </div>
+
+                            <br><br><br>
+
+                                <div class="col-lg-9 col-lg-offset-2">
+                                    <center>
+
+                                        <button class="btn btn-success" onclick=" fncSubmit() ">วิเคราะห์ข้อมูล</button> &nbsp;
+                                        &nbsp; &nbsp; <input class="btn btn-danger" name="clear" type="reset" value="ล้างข้อมูล">
+                                    </center>
+                                </div>
+                            </div>
                         </form>
                     </div><!-- submit-->
-                    <div class="form-group">
-                        <div class="col-lg-9 col-lg-offset-2">
-                            <center>
-                                <button class="btn btn-success" onclick="message()">วิเคราะห์ข้อมูล</button> &nbsp;
-                                &nbsp; &nbsp; <input class="btn btn-danger" name="clear" type="reset" value="ล้างข้อมูล">
-                            </center>
-                        </div>
-                    </div><br>
-                    <br>
-                    <br>
+
                 </div>
             </div>
         </div>
-    </div><br>
-    <br>
+    </div>
     <!--footer-->
-    <div class="container">
+
         <footer>
+          <div class="container">
             <div class="row">
                 <div align="center" class="col-lg-12">
                     <p>"COPYRIGHT@2018 &copy; ภาควิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ คณะวิทยาศาศตร์
