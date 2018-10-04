@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/napapornu/allergy#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
     "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
   }
