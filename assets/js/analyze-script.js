@@ -45,7 +45,9 @@ function message() {
     var e = document.getElementById('e');
     var exercise = e.options[e.selectedIndex].value;
 
-    if (sex == '0' && age == '0' && work == '0' && congenital == '0' && family == '0' && atopen == '0' && alcohol == '0' && food == '0' && home == '0' && bedroom == '0' && chemicals == '0' && cigarettes == '0' && sleep == '0' && shelter == '0' && exercise == '0') {
+    if (sex == '0' && age == '0' && work == '0' && congenital == '0' && family == '0'
+    && atopen == '0' && alcohol == '0' && food == '0' && home == '0' && bedroom == '0'
+    && chemicals == '0' && cigarettes == '0' && sleep == '0' && shelter == '0' && exercise == '0') {
         alert("กรุณาใส่ข้อมูลให้ครบ");
     }
 
