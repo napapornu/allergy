@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 // atopen
-    $('#atopen6').on('click', function() {
+    $('#atopen6').on('click', function() {    
         var num = $("input[id*='atopen']").length;
 
         if ($("#atopen6").prop("checked")) {
@@ -45,6 +45,8 @@ $("input[id*='chemicals']").on('click', function () {
         $("#" + id + i).prop("checked", false);
       }
     }
+
+
 
 
 

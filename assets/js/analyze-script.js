@@ -1,56 +1,60 @@
- function fncSubmit() {
+$(document).ready(function () {
 
-    var s = document.getElementById('s');
-    var sex = s.options[s.selectedIndex].value;
+  $('#submitForm').on('click', function(){
+    var sex = $('#sex').val();
+    var age = $('#age').val();
+    var work = $('#work').val();
+    var family = $('#family').val();
+    var congenital = $('#congenital').val();
+    var alcohol = $('#alcohol').val();
+    var home = $('#home').val();
+    var bedroom = $('#bedroom').val();
+    var cigarettes = $('#cigarettes').val();
+    var exercise = $('#exercise').val();
+    var sleep = $('#sleep').val();
+    var shelter = $('#shelter').val();
 
-    var a = document.getElementById('a');
-    var age = a.options[a.selectedIndex].value;
+    var atopen = [];
+    $("input[id*='atopen']:checked").each(function(i){
+      atopen[i] = $(this).val();
+    });
 
-    var w = document.getElementById('w');
-    var work = w.options[w.selectedIndex].value;
+    var chemicals = [];
+    $("input[id*='chemicals']:checked").each(function(i){
+      chemicals[i] = $(this).val();
+    });
 
-    var con = document.getElementById('con');
-    var congenital = con.options[con.selectedIndex].value;
+    var food = [];
+    $("input[id*='food']:checked").each(function(i){
+      food[i] = $(this).val();
+    });
 
-    var f = document.getElementById('f');
-    var family = f.options[f.selectedIndex].value;
+    console.log(sex);
+    console.log(age);
+    console.log(work);
+    console.log(family);
+    console.log(congenital);
+    console.log(atopen);
+    console.log(chemicals);
+    console.log(food);
+    console.log(alcohol);
+    console.log(home);
+    console.log(bedroom);
+    console.log(cigarettes);
+    console.log(exercise);
+    console.log(sleep);
+    console.log(shelter);
 
-    var at = document.getElementById('at');
-    var atopen = at.options[at.selectedIndex].value;
 
-    var al = document.getElementById('al');
-    var alcohol = al.options[al.selectedIndex].value;
+    // alert(atopen)
 
-    var fo = document.getElementById('fo');
-    var food = fo.options[fo.selectedIndex].value;
 
-    var h = document.getElementById('h');
-    var home = h.options[h.selectedIndex].value;
-
-    var b = document.getElementById('b');
-    var bedroom = b.options[b.selectedIndex].value;
-
-    var ch = document.getElementById('ch');
-    var chemicals = ch.options[ch.selectedIndex].value;
-
-    var ci = document.getElementById('ci');
-    var cigarettes = ci.options[ci.selectedIndex].value;
-
-    var sl = document.getElementById('sl');
-    var sleep = sl.options[sl.selectedIndex].value;
-
-    var sh = document.getElementById('sh');
-    var shelter = sh.options[sh.selectedIndex].value;
-
-    var e = document.getElementById('e');
-    var exercise = e.options[e.selectedIndex].value;
-
-    if (sex == "" && age ==  "" && work ==  "" && congenital == ""
-     && family == "" && atopen == "" && alcohol == "" && food ==  ""
-     && home == ""  && bedroom == "" && chemicals ==  "" && cigarettes == ""
-      && sleep ==  "" && shelter ==  ""  && exercise ==  "") {
-          alert("กรุณากรอกข้อมูลให้ครบถ้วน")
+    if (sex == null && age == null) {
+        alert('กรุณากรอกข้อมูลให้ครบถ้วน')
+    }else {
+      rule
     }
+  });
 
 
-}
+});
