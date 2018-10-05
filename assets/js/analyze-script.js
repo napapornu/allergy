@@ -49,13 +49,47 @@ $(document).ready(function () {
     // alert(atopen)
 
 
-    if (sex == null || age == null) {
+    if (sex == null || age == null || work == null || family == null || congenital==null || atopen==null ||chemicals==null
+    || food==null || alcohol==null || home==null || bedroom==null || cigarettes==null || exercise ==null ||sleep==null
+  || shelter==null) {
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
     }
-    else if (atopen ="atopen6"){
-          alret('ไม่มีโอกาศเป็น')
+    else if (atopen =="atopen6"){
+          alret('ไม่เป็น มีโอกาสน้อยมาก')
     }
-  });
+    else if (atopen =="atopen3" ){
+          alret('Allergic')
+    }
+    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex1") {
+          alret('Astham')
+    }
+    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex2") {
+          alret('ไม่เป็น มีโอกาส ')
+    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom3" ) {
+          alret('Allergic ')
+    }
+    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom2" ) {
+          alret('Allergic ')
+    }
+    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom4" ) {
+          alret('Allergic ')
+    }
+    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom=="bedroom4" ) {
+                alret('ไม่เป็น มีโอกาส  ')
+    }
+    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+     && work == "work3" ) {
+                alret('ไม่เป็น มีโอกาส  ')
+    }
+    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+     && work != "work3" exercise =="exercise3" ) {
+                alret('ไม่เป็น มีโอกาส  ')
+    }
+    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+     && work != "work3" exercise !="exercise3" ) {
+                alret('ไม่เป็น มีโอกาส  ')
+    }
+      });
 
 
 });
