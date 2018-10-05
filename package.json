@@ -1,8 +1,8 @@
 {
   "name": "allergy",
   "version": "1.0.0",
-  "description": "- Bootstrap 3.3.7\r - jQuery 3.3.1\r - Sass 3.4.23",
-  "main": "index.js",
+  "description": "Download project and install use command.\r ```\r git clone https://github.com/napapornu/allergy.git\r cd allergy\r npm install\r ```",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/napapornu/allergy#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
     "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
   }
