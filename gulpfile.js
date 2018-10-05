@@ -33,7 +33,8 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('run', ['styles', 'script', 'browser-sync']);
+gulp.task('run', ['browser-sync']);
+// gulp.task('run', ['styles', 'script', 'browser-sync']);
 
 gulp.task('watch', function () {
     gulp.watch(['**/*.html'], browserSync.reload);
