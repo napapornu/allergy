@@ -54,42 +54,197 @@ $(document).ready(function () {
   || shelter==null) {
         alert('กรุณากรอกข้อมูลให้ครบถ้วน')
     }
-    else if (atopen =="atopen6"){
-          alret('ไม่เป็น มีโอกาสน้อยมาก')
-    }
-    else if (atopen =="atopen3" ){
-          alret('Allergic')
-    }
-    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex1") {
-          alret('Astham')
-    }
-    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex2") {
-          alret('ไม่เป็น มีโอกาส ')
-    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom3" ) {
-          alret('Allergic ')
-    }
-    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom2" ) {
-          alret('Allergic ')
-    }
-    else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom4" ) {
-          alret('Allergic ')
-    }
-    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom=="bedroom4" ) {
-                alret('ไม่เป็น มีโอกาส  ')
-    }
-    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
-     && work == "work3" ) {
-                alret('ไม่เป็น มีโอกาส  ')
-    }
-    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
-     && work != "work3" exercise =="exercise3" ) {
-                alret('ไม่เป็น มีโอกาส  ')
-    }
-    else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
-     && work != "work3" exercise !="exercise3" ) {
-                alret('ไม่เป็น มีโอกาส  ')
-    }
-      });
+
+
+        else if (atopen =="atopen6"){
+              alret('ไม่เป็น')
+        }
+        else if (atopen =="atopen3" ){
+              alret('Allergic')
+        }
+        else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex1") {
+              alret('Asthma')
+        }
+        else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom1" && sex=="sex2") {
+              alret('ไม่เป็น')
+        else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom3" ) {
+              alret('Allergic ')
+        }
+        else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom2" ) {
+              alret('Allergic ')
+        }
+        else if (atopen =="atopen4" && atopen=="atopen3" && bedroom=="bedroom4" ) {
+              alret('Allergic ')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom=="bedroom4" ) {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work == "work3" ) {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work != "work3" exercise =="exercise3" ) {
+                    alret('ไม่เป็น ')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work != "work3" exercise !="exercise3" ) {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work != "work3" exercise !="exercise3" && chemicals == "chemicals8" ) {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work != "work3" exercise !="exercise3" && chemicals != "chemicals8" ) {
+                    alret('Allergic')
+        }
+        else if (atopen =="atopen1" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5" && bedroom !="bedroom4"
+         && work != "work3" exercise !="exercise3" && chemicals != "chemicals8" ) {
+                    alret('Allergic')
+        }
+        else if (atopen=="atopen1"&& atopen="atopen2" &&atopen=="atopen3") {
+                    alret('Allergic')
+
+        }
+        else if (atopen=="atopen3"&& atopen=="atopen4"&& bedroom=="bedroom4") {
+                    alret('ไม่เป็น')
+
+        }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!="bedroom4") {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!="bedroom4" && cigarettes=="cigarettes3") {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3") {
+                    alret('ไม่เป็น')
+        }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+           &&home == "home4" ) {
+                      alret('ไม่เป็น')
+          }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+            &&home != "home4" ) {
+                       alret('ไม่เป็น')
+          }
+         else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                       &&home != "home4" && work=="work3" ) {
+                                  alret('ไม่เป็น')
+          }
+        else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                &&home != "home4" && work !="work3" &&exercise=="exercise3" ) {
+                      alret('ไม่เป็น')
+          }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                  &&home != "home4" && work !="work3" &&exercise=="exercise3" ) {
+                        alret('ไม่เป็น')
+            }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                    &&home != "home4" && work !="work3" &&exercise !="exercise3" ) {
+                          alret('ไม่เป็น')
+
+              }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+              &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals =="chemicals5"&& chemicals =="chemicals6"&& chemicals =="chemicals7") {
+                          alret('ไม่เป็น')
+
+                }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                    &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                     chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals =="chemicals6") {
+                          alret('Allergic')
+
+                      }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                  &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                  chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals =="chemicals8") {
+                            alret('ไม่เป็น')
+                      }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals !="chemicals8"
+              && congenital == "congenital8") {
+                alret('ไม่เป็น')
+                      }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                  &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                    chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals !="chemicals8"
+                    && congenital != "congenital8" && shelter=="shelter4") {
+                      alret('ไม่เป็น')
+                      }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                      &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                    chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals !="chemicals8"
+                      && congenital != "congenital8" && shelter =="shelter1" ) {
+                        alret('ไม่เป็น')
+                      }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                      &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                      chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals !="chemicals8"
+                      && congenital != "congenital8" && shelter !="shelter1" && age== "age4" ) {
+                        alret('ไม่เป็น')
+                              }
+          else if (atopen=="atopen3" && atopen=="atopen4" && bedroom!=="bedroom4" && cigarettes!="cigarettes3"
+                      &&home != "home4" && work !="work3" &&exercise !="exercise3" && chemicals !="chemicals5"&&
+                      chemicals !="chemicals6"&& chemicals !="chemicals7" && chemicals !="chemicals6" && chemicals !="chemicals8"
+                      && congenital != "congenital8" && shelter !="shelter1" && age!= "age4" ) {
+                      alret('Dermatitis')
+                            }
+          else if (atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4" && ) {
+                      alret('Allergic')
+          }
+          else if (atopen=="atopen5"  ) {
+                      alret('Dermatitis')
+          }
+          else if (atopen=="atopen4"  ) {
+                      alret('Allergic')
+                    }
+          else if (atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5") {
+                      alret('Allergic')
+                    }
+          else if (atopen=="atopen3"  ) {
+                      alret('Allergic')
+                    }
+          else if ( atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4" && atopen=="atopen5") {
+                      alret('Dermatitis')
+                    }
+          else if (atopen=="atopen1"  ) {
+                      alret('Allergic-Dermatitis')
+                    }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen5") {
+                      alret('Allergic-Asthma')
+                    }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4"
+                    && bedroom=="bedroom4") {
+                      alret('ไม่เป็น')
+                    }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4"
+                    && bedroom !="bedroom4" && work== "work3") {
+                    alret('ไม่เป็น')
+                      }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4"
+                  && bedroom !="bedroom4" && work != "work3" &&exercise =="exercise3") {
+                      alret('ไม่เป็น')
+                      }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4"
+                  && bedroom !="bedroom4" && work != "work3" &&exercise !="exercise3" && chemicals=="chemicals8") {
+                  alret('ไม่เป็น')
+                    }
+          else if ( atopen=="atopen1" && atopen=="atopen2" && atopen=="atopen3" && atopen=="atopen4"
+                  && bedroom !="bedroom4" && work != "work3" &&exercise !="exercise3" && chemicals !="chemicals8") {
+                  alret('Allergic')
+                  }
+          else if (atopen=="atopen3" && atopen=="atopen5") {
+                    alret('ไม่เป็น')
+          }
+          else if (atopen=="atopen1" && atopen=="atopen3"&& atopen=="atopen4") {
+                    alret('Allergic-Dermatitis')
+          }
+
+          else {
+
+               alret('ข้อมูลอยู่นอกเหนือกฏ')            });
 
 
 });
