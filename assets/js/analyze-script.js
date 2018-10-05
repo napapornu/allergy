@@ -47,22 +47,14 @@ $(document).ready(function () {
 
 
     // alert(atopen)
-      var =s,a,w,f,co,at,ch,fo,al,h,be,ci,ex,sl,sh
-      s=sex;
-      a=age;
-      w=work;
-      f=family;
-      co=congenital;
-      at=atopen;
-      ch=chemicals;
-      fo=food;
-      al=alcohol;
-      h=home;
-      b=bedroom;
-      ci=cigarettes;
-      ex=exercise;
-      sl=sleep;
-      sh=shelter;
+      var =al,de,as,alde,alas,deas,n
+        al=    Allergic
+        de=    Dermatitis
+        as=    Asthma
+        alde= Allergic-Dermatitis
+        alas=Allergic=Asthma
+        deas=Dermatitis-Asthma
+        n=      noAllerg
 
     if (sex == null || age == null || work == null || family == null || congenital==null || atopen==null ||chemicals==null
     || food==null || alcohol==null || home==null || bedroom==null || cigarettes==null || exercise ==null ||sleep==null
