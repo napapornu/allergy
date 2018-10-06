@@ -133,11 +133,7 @@ $(document).ready(function() {
 
 				var jsonData = JSON.stringify(result);
 				sessionStorage.setItem('result', jsonData);
-<<<<<<< HEAD
-				window.location.href = 'output.html';
-=======
 				window.location.href= '/allergy/output.html'
->>>>>>> nan
 	  }
 
     });
