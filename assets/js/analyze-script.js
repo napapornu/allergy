@@ -128,7 +128,7 @@ $(document).ready(function() {
 			  } else if (atopen == "atopen1" && atopen == "atopen3" && atopen == "atopen4") {
 				  result ={"type": 1,"th": "แพ้อากาศ และ ภูมิแพ้ผิวหนัง", "en":"Allergic-Dermatitis"};
 			  } else {
-				  result = {"type": 0 ,"th": "ข้อมูลอยู่นอกเหนือกฏ", "en": "Out of Rule"};
+				  result = {"type": 0 ,"th": "ข้อมูลอยู่นอกเหนือกฎ", "en": "Out of Rule"};
 			  }
 
 				var jsonData = JSON.stringify(result);
