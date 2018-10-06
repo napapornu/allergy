@@ -133,7 +133,7 @@ $(document).ready(function() {
 
 				var jsonData = JSON.stringify(result);
 				sessionStorage.setItem('result', jsonData);
-				window.location.href='/output.html'
+				window.location.href= '/allergy/output.html'
 	  }
 
     });
