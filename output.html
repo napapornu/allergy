@@ -64,9 +64,10 @@
                                 <div class="container">
                                   <div class="col-md-12">
                                     <div class="panel-heading">
-                                      <center>
-                                        <h2><font color="#008000">ผลลัพธ์การพยากรณ์</font></h2>
-                                      </center>
+
+                                        <h2 class="text-center"><font color="#008000">ผลลัพธ์การพยากรณ์</font></h2>
+
+
 
                                     </div>
                                     <div class="panel-body">
@@ -76,14 +77,10 @@
                                         <div class="alert alert-default">
                                           <div class="well">
                                             <p align="default"></p><center>
-                                            <h3><b>ผลการพยากรณ์: <script>
-
-
-                                      // function myFunction() {
-                                      //     document.getElementById("demo1").innerHTML = "Hello Dolly!";
-                                      //     document.getElementById("demo2").innerHTML = "How are you?";
-                                      // }
-</script></b> <br></h3>
+                                            <h3>
+                                             <span id="result"></span>
+                                              <br>
+                                            </h3>
 
                                           </center>
                                           </div>
@@ -132,6 +129,12 @@
     <!-- form using analyze script -->
     <script src="./assets/js/analyze-script.js"></script>
     <script src="./assets/js/handle-form.js"> </script>
+  <script>
+        var data = JSON.parse(sessionStorage.getItem('result'));
+        var color = data.type === 0 ? "text-success" : "text-danger";
+        $('#result').addClass(color).html(data.th);
+
+  </script>
 
 
 </body>
