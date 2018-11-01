@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +71,7 @@
                                     </div>
                                     <div class="panel-body">
                                     <!--  <form class="form-horizontal text-center" id="p1" method="post" name="p1" onsubmit="JavaScript:return sent();"> -->
-                                    
+
                                         <form action="output.html" class="form-horizontal" method="form1" name="f1" onsubmit="JavaScript:return fncSubmit();">
 
                                         <div class="alert alert-default">
@@ -134,7 +133,6 @@
         var data = JSON.parse(sessionStorage.getItem('result'));
         var color = data.type === 0 ? "text-success" : "text-danger";
         $('#result').addClass(color).html(data.th);
-
   </script>
 
 
